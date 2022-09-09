@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Fill Up</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body class="container text-center">
+
+    <header>
+        <h1>Enter Your Information</h1>
+    </header>
+
+    <main class="my-5">
+        <section class="w-75 mx-auto bg-light shadow-lg py-3">
+            <p class="text-start d-block ms-5 mb-2 fw-bold mt-3">Name</p>
+            <div class="row text-center">
+                <div class="col col-lg-5">
+                    <input id="name-field" type="text" placeholder="Enter Your Name" class="px-2 py-1 w-75">
+                </div>
+                <div class="col col-lg-2"><button onclick="deleteName()" class="btn btn-danger">Delete Name</button>
+                </div>
+                <div class="col col-lg-2"><button onclick="saveName()" class="btn btn-primary">Save Name</button></div>
+            </div>
+
+            <p class="text-start d-block ms-5 mb-2 fw-bold mt-3">Email</p>
+            <div class="row text-center">
+                <div class="col col-lg-5">
+                    <input id="email-field" type="email" placeholder="Enter Your Name" class="px-2 py-1 w-75">
+                </div>
+                <div class="col col-lg-2"><button onclick="deleteEmail()" class="btn btn-danger">Delete Email</button>
+                </div>
+                <div class="col col-lg-2"><button onclick="saveEmail()" class="btn btn-primary">Save Email</button>
+                </div>
+            </div>
+
+            <p class="text-start d-block ms-5 mb-2 fw-bold  mt-3">Message</p>
+            <div class="row text-center">
+                <div class="col col-lg-5">
+                    <textarea id="message-field" placeholder="Enter Your Message" cols="30" rows="3"
+                        class="px-2"></textarea>
+                </div>
+                <div class="col col-lg-6 text-start">
+                    <button onclick="deleteMessage()" class="btn btn-danger">Delete Message</button>
+                    <button onclick="saveMessage()" class="btn btn-primary ms-3">Save Message</button>
+                </div>
+            </div>
+
+            <div class="row text-center my-4 mb-5">
+                <div class="col col-lg-10 text-center">
+                    <button onclick="saveAll()" class="btn btn-outline-primary">Save All</button>
+                    <button onclick="clearAll()" class="btn btn-outline-danger ms-3">Clear All</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="js/form.js"></script>
+</body>
+
+</html>
